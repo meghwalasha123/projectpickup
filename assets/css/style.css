@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, 'Times New Roman';
+
+}
+:root {
+    --main-color: #4a10bc;
+
+}
+/* navbar */
+.navbar1 {
+    background-color: var(--main-color);
+}
+.navbar ul li a{
+    color:var(--main-color) ;
+}
+
+nav button {
+    background-color: var(--main-color);
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    align-items: center;
+    padding: 0.5rem 1.8rem;
+}
+/* navbar end */
+
+
+
+/* carousel */
+
+.carousel-item .carousel-caption {
+    position: absolute;
+    right: 60%;
+    bottom: 22.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #4a10bc;
+    text-align: center;
+}
+/* carousel end */
+
+
+
+
+/*------Services Start------*/
+#serviceSection h1 {
+    text-align: center;
+    color: var(--main-color)
+}
+#serviceSection .item {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+
+}
+#services .circleDiv {
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    color: white;
+    transition: all 1s;
+    box-shadow: 0 0 5px 5px #ede8f9;
+}
+#services .circleDiv:hover {
+    background-color: white;
+    box-shadow: 0 0 5px 5px #c8c0e3;
+}
+#services .circleDiv img {
+    width: 50px;
+    height: 75px;
+    color: var(--main-color);
+}
+#services .circleDiv:hover img {
+    width: 150px;
+    height: 150px;
+    color: white;
+
+}
+#services .circleDiv:hover h2 {
+    display: none;
+}
+#services .circleDiv:hover p {
+    display: none;
+}
+#services .circleDiv h2 {
+    font-size: 20px;
+}
+#services .circleDiv p {
+    font-size: 15px;
+    padding: 9px;
+}
+
+/*------Services End------*/
+
+
+
+
+/* customerReviews */
+#customerReviews {
+    margin: 40px 0px;
+    width: 100%;
+  background-color: white;
+} 
+#customerReviews #boxContainer {
+    transition: all 1s;
+}
+#customerReviews #boxContainer:hover {
+    transform: scale(1.1);
+}
+#customerReviews img {
+    margin-left: -12px;
+    width: 250px;
+    
+}
+#customerReviews h1 {
+    color: var(--main-color);
+}
+#customerReviews #reviewContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 400;
+}
+#boxContainer .row{
+    margin: 0 auto;
+    background: var(--main-color);
+    box-shadow: 0px 0px 4px #6986b1,
+    0px 0px 8px  #6986b1,
+    0px 0px 12px #6986b1;
+}
+/* customerReviews end */
+
+
+/*--------partner-------*/
+#partner {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#partner h1 {
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+#partner img {
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+    transition: all 2s;
+}
+
+#partner img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 5px #bda8db;
+}
+/*------partner End----*/
+
+/*------App Start------*/
+#appSection {
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+#appSection h1 {
+    color: white;
+    font-size: 4rem;
+    margin-left: 100px;
+}
+
+#appSection #appContent {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#appSection #appImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#appSection #appImg img {
+    width: 150px;
+}
+#arrow{
+    margin-left: 140px;
+}
+
+/*------App End------*/
+
+
+
+
+/*------Network Start------*/
+#network {
+    width: 100%;
+    background-color: var(--main-color);
+    box-shadow: 5px 2px 2px 2px #4b79c9;
+    margin-bottom: 50px;
+    color: white;
+
+}
+
+#network a {
+    font-size: large;
+    color: white;
+    margin: 0 5px;
+}
+
+#network .row {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+ /*------Footer Start---*/
+ #footerSection {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+#footerSection h2 {
+    color: var(--main-color);
+}
+#footerSection a {
+    color: black !important;
+    text-decoration: none;
+}
+#footerSection .termsCondition h2,
+#footerSection .about h2 {
+    margin-left: 20px;
+}
+
+/*------Footer End---*/
+
+/*------Footer2 Start---*/
+#footer2 {
+    width: 100%;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 500;
+}
+#footer2 h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+#footer2 p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+#footer2 img{
+    width: 50px;
+}
+
+
+
+
+/* media query */
+@media (min-width: 280px) and (max-width:575px) { 
+    .carousel-item .carousel-caption {
+        position: absolute;
+        right: 53%;
+        bottom: 1.25rem;
+        left: 0;
+        font-size: .8rem;  
+    }
+    #boxContainer .row{
+        flex-direction: column;
+
+    }
+    #customerReviews #reviewContent {
+       width: 100%;
+    }
+    #boxContainer .row .col-5{
+        width: 100%;
+    }
+    #customerReviews img {
+        margin-left: 0px;
+        padding-top: 10px;
+        width: 100%;
+        height: 280px;
+    }
+    #appSection h1 {
+        color: white;
+        font-size: 1.5rem;
+        margin-left: 40px;
+    }
+    #arrow{
+        margin-left: 120px;
+        width: 90px;
+    }
+    #appSection #appImg img {
+        width: 110px;
+    }
+    
+ }
+ 
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .carousel-item .carousel-caption {
+        position: absolute;
+        right: 60%;
+        bottom: 8.25rem;
+        left: 0; 
+    }
+    
+ }
+ @media (max-width:780px) {
+    .navbar1 {
+        display: none;
+    }}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .carousel-item .carousel-caption {
+        position: absolute;
+        right: 60%;
+        bottom: 11.25rem;
+        left: 0;   
+    }
+    #appSection h1 {
+        color: white;
+        font-size: 4rem;
+        margin-left: 40px;
+    }
+    #appSection .row.imgappHead {
+        margin-left: 440px;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .carousel-item .carousel-caption {
+        position: absolute;
+        right: 60%;
+        bottom: 19.25rem;
+        left: 0;
+       
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .carousel-item .carousel-caption {
+        position: absolute;
+        right: 60%;
+        bottom: 22.25rem;
+        left: 5%;  
+    }
+    #appSection #appContent {
+        margin-top: 56px;
+        display: flex;
+        flex-direction: column;
+    }
+    #arrow {
+        margin-left: 251px;
+    }
+    #appSection #appImg img {
+        width: 250px;
+    }
+  }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {  }

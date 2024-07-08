@@ -1,0 +1,654 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Cambria, 'Times New Roman';
+
+    }
+
+    html {
+        width: 100%;
+    }
+
+
+
+
+    :root {
+        --main-color: #4a10bc;
+
+    }
+
+    /*--------Navbar1----------*/
+    .navbar1 {
+        width: 100%;
+        height: 50px;
+        background-color: var(--main-color);
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 700;
+        font-family: Cambria,
+            'Times New Roman';
+        display: flex;
+        align-items: center;
+
+    }
+
+
+
+
+
+    /*---------Navbar----------*/
+    .navbar img {
+        width: 100px;
+        height: 75px;
+    }
+
+    nav .navbar-nav li a {
+        color: var(--main-color) !important;
+        font-weight: 600;
+    }
+
+    nav button {
+        background-color: var(--main-color);
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        align-items: center;
+        padding: 0.5rem 1.8rem;
+
+    }
+
+    /*---------banner start*/
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div id="carouselContent">
+                    <h1>Expert care for</h1>
+                    <h1>Your Device</h1>
+                </div>
+                <img src="./images2/layer6a.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <div id="carouselContent">
+                    <h1>Expert care for</h1>
+                    <h1>Your Device</h1>
+                </div>
+                <img src="./images2/layer6a.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div id="carouselContent">
+                    <h1>Expert care for</h1>
+                    <h1>Your Device</h1>
+                </div>
+                <img src="./images2/layer6a.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+    </div>
+
+css is here
+    .carousel-item {
+        position: relative;
+    }
+
+    .carousel-item #carouselContent {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+
+    }
+
+    .carousel-item #carouselContent h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--main-color);
+    }
+
+    #carouselExampleIndicators .carousel-indicators button {
+        background-color: var(--main-color);
+    }
+
+
+    /*------Services Start------*/
+    #serviceSection h1 {
+        text-align: center;
+        color: var(--main-color)
+    }
+
+    #serviceSection .item {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+
+    }
+
+
+    #services .circleDiv {
+        width: 240px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+        background-color: var(--main-color);
+        color: white;
+        transition: all 1s;
+        box-shadow: 0 0 5px 5px #ede8f9;
+    }
+
+    #services .circleDiv:hover {
+        background-color: white;
+        box-shadow: 0 0 5px 5px #c8c0e3;
+    }
+
+
+    #services .circleDiv img {
+        width: 50px;
+        height: 75px;
+        color: var(--main-color);
+
+
+    }
+
+    #services .circleDiv:hover img {
+        width: 150px;
+        height: 150px;
+        color: white;
+
+    }
+
+    #services .circleDiv:hover h2 {
+        display: none;
+    }
+
+    #services .circleDiv:hover p {
+        display: none;
+    }
+
+
+
+
+
+    #services .circleDiv h2 {
+        font-size: 20px;
+    }
+
+    #services .circleDiv p {
+        font-size: 15px;
+        padding: 9px;
+    }
+
+
+
+
+
+
+    /*------Services End------*/
+    /*------Customer Review Start----*/
+    #customerReviews {
+        margin: 50px 0px;
+        width: 100%;
+        height: 720px;
+        background-color: white;
+    }
+
+    #customerReviews #boxContainer {
+        transition: all 1s;
+    }
+
+    #customerReviews #boxContainer:hover {
+        transform: scale(1.1);
+
+    }
+
+    #customerReviews img {
+        margin-left: -12px;
+        width: 200px;
+    }
+
+    #customerReviews h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--main-color);
+
+    }
+
+    #customerReviews #reviewContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--main-color);
+        color: white;
+        font-weight: 400;
+
+    }
+
+    #customerReviews #reviewContent h2 {
+        font-size: 2rem;
+    }
+
+    #customerReviews #reviewContent h3 {
+        font-size: 1.2rem
+    }
+
+    #customerReviews #reviewContent p {
+
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    #customerReviews #boxContainer {
+        box-shadow: 5px 5px 5px 5px #c4cfdf;
+
+
+    }
+
+    /*--------partner-------*/
+    #partner {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+    }
+
+
+    #partner h1 {
+        align-items: center;
+        font-size: 2.5rem;
+        color: var(--main-color);
+    }
+
+
+    #partner img {
+        width: 100%;
+        height: 60px;
+        object-fit: contain;
+        transition: all 2s;
+
+
+    }
+
+    #partner img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px 5px #bda8db;
+    }
+
+
+    /*------partner End----*/
+    /*------App Start------*/
+    #appSection {
+        width: 100%;
+        background-color: var(--main-color);
+
+
+    }
+
+    #appSection h1 {
+        color: white;
+        font-size: 4rem;
+        margin-left: 100px;
+
+
+    }
+
+    #appSection #appContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #appSection #arrow {}
+
+
+
+    #appSection #appImg {
+        margin-left: 130px;
+
+    }
+
+    #appSection #appImg img {
+        width: 150px;
+    }
+
+    /*------App End------*/
+    /*------Network Start------*/
+    #network {
+        width: 100%;
+        height: 60px;
+        background-color: var(--main-color);
+        box-shadow: 5px 2px 2px 2px #4b79c9;
+        margin-bottom: 50px;
+        color: white;
+
+    }
+
+    #network a {
+        font-size: large;
+        color: white;
+        margin: 0 5px;
+    }
+
+    #network .row {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    /*------Footer Start---*/
+    #footerSection {
+
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    #footerSection h2 {
+        color: var(--main-color);
+    }
+
+
+    #footerSection a {
+        color: black !important;
+        text-decoration: none;
+
+    }
+
+    #footerSection .termsCondition h2,
+    #footerSection .about h2 {
+        margin-left: 20px;
+    }
+
+    /*------Footer End---*/
+    /*------Footer2 Start---*/
+    #footer2 {
+        width: 100%;
+        height: 75px;
+        background-color: var(--main-color);
+        color: white;
+        font-weight: 500;
+
+
+    }
+
+
+
+
+    #footer2 h2 {
+        font-size: 1.5rem;
+
+    }
+
+    #footer2 p {
+        font-size: 1rem;
+        margin-top: 20px;
+
+
+    }
+
+    /*-------------Media Query--------*/
+
+    @media (max-width:320px) {
+        #customerReviews img {
+            width: 134px;
+        }
+
+        #customerReviews #reviewContent h2 {
+            font-size: 1.2rem;
+        }
+
+        #customerReviews #reviewContent h3 {
+            font-size: 1rem;
+        }
+
+        #customerReviews #reviewContent p {
+            font-size: 0.8rem;
+        }
+
+        #partner {
+            margin-top: 350px;
+        }
+
+
+
+    }
+
+    @media (min-width:321px) and (max-width:375px) {
+        #customerReviews img {
+            width: 157px;
+        }
+
+        #customerReviews #reviewContent h2 {
+            font-size: 1.3rem;
+        }
+
+        #customerReviews #reviewContent h3 {
+            font-size: 1.1rem;
+        }
+
+        #customerReviews #reviewContent p {
+            font-size: 0.9rem;
+        }
+
+        #partner {
+            margin-top: 500px;
+        }
+
+        #network #icons {
+            margin-bottom: 25px;
+        }
+
+
+    }
+
+
+    @media(min-width:376px) and (max-width:425px) {
+        #customerReviews img {
+            width: 177px;
+        }
+
+        #customerReviews #reviewContent h2 {
+            font-size: 1.4rem;
+        }
+
+        #customerReviews #reviewContent h3 {
+            font-size: 1.2rem;
+        }
+
+        #customerReviews #reviewContent p {
+            font-size: 1rem;
+        }
+
+        #partner {
+            margin-top: 600px;
+        }
+
+        #network #icons {
+            margin-bottom: 25px;
+        }
+
+    }
+
+
+    @media (max-width:425px) {
+        .carousel-item #carouselContent {
+            position: absolute;
+            margin-top: -30px;
+            margin-left: -20px;
+        }
+
+
+
+
+
+
+    }
+
+    @media (max-width:576px) {
+
+
+        .carousel-item #carouselContent h1 {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    @media (min-width:426px) and (max-width:768px) {
+        #customerReviews img {
+            width: 150px;
+        }
+
+        #customerReviews #reviewContent h2 {
+            font-size: 1.4rem;
+        }
+
+        #customerReviews #reviewContent h3 {
+            font-size: 1.1rem;
+        }
+
+        #customerReviews #reviewContent p {
+            font-size: 0.9rem;
+        }
+    }
+
+
+    @media (max-width:768px) {
+        #navbar1 {
+            display: none;
+
+        }
+
+        .carousel-item #carouselContent {
+            position: absolute;
+            top: 75px;
+            left: 50px;
+
+        }
+
+        #customerReviews {
+            height: 550px;
+        }
+
+
+
+
+    }
+
+
+
+
+
+    @media (max-width:880px) {
+        .carousel-item #carouselContent {
+            position: absolute;
+            top: 75px;
+            left: 50px;
+
+        }
+
+    }
+
+
+
+    @media (max-width:991px) {
+        nav button {
+            padding: 0.28rem
+        }
+
+    }
+
+    @media (min-width:768px) and(max-width:1023px) {
+        #appSection #arrow {
+            margin-left: 250px;
+            margin-top: -50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        #appSection #appImg {
+            width: 107px;
+        }
+
+        #network h2 {
+            font-size: 1.4rem;
+        }
+
+    }
+
+    @media (min-width:1024px) and (max-width:1139px) {
+        #appSection #arrow {
+            margin-left: 230px;
+            margin-top: -80px;
+        }
+
+        #network h2 {
+            font-size: 1.8rem;
+        }
+
+    }
+
+
+
+
+    @media(min-width:1440px) {
+
+
+        #customerReviews img {
+            width: 275px;
+        }
+
+        #customerReviews #reviewContent h2 {
+            font-size: 3rem;
+        }
+
+        #customerReviews #reviewContent h3 {
+            font-size: 2.2rem;
+        }
+
+        #customerReviews #reviewContent p {
+            font-size: 1.3rem;
+        }
+
+        #partner {
+            margin-top: 250px;
+        }
+
+        #appSection #arrow {
+            margin-left: 250px;
+            margin-top: -250px;
+        }
+
+
+
+        #appSection #appImg {
+            margin-left: 130px;
+            margin-top: -180px;
+        }
+
+
+    }
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
